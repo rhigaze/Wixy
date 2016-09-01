@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  text-align: center;
+  justify-content:  space-around;
+  flex-flow: column nowrap;
+  width: 100vw;
+  padding:5px;
+
+}
+
+.colors {
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}  
+
+.inEdit {
+    border: dashed 1px #428bca
+}

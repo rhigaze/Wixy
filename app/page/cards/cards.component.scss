@@ -1,0 +1,97 @@
+$maxCardSize: 250px;
+$minCardSize: 100px;
+
+.cards {
+    display : flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 1vw;
+}
+
+.card {
+    width: 20vw;
+    min-width: $minCardSize;
+
+    height: 20vw;
+    min-height: $minCardSize;
+    
+    background: rgba(129, 121, 121, 0.29);
+    border-radius: 10%;
+    margin: 1vw 1vh;
+    padding: 1vw; 
+    text-align: center;
+    
+}
+  
+.btns {
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 5px;
+    button {
+        width:120px;
+        margin: 10px;
+    }
+}
+
+.inEdit {
+    border: dashed 1px #428bca;
+    
+}
+// .icons{
+    
+//     display: flex;
+//     flex-flow: row wrap;
+//     width: 450px;
+//     max-width: 450px;
+//     // max-height: 350px;
+//     justify-content: space-around;
+//     align-items: center;
+//     // top:0;
+//     // left: -447px; 
+//     position: absolute;
+//     z-index: 200;
+//     // margin:10px 5px 30px 5px;
+//     background: rgba(100, 121, 121, 0.29);
+//     border-radius: 0 10% 10% 0;
+//     // padding: 20px;
+//     font-size: 0.8em;
+//     font-weight: bold;
+//     text-align: center;
+//     button {
+//         transform: rotate(90deg);
+//         white-space:nowrap;
+//         display:block;
+//         bottom:0;
+//         right: -84px;
+//         bottom :170px;
+//         position: absolute;
+//     } 
+     
+//     transform: translateX(0%);
+
+// }
+.icons{
+    display: flex;
+    flex-flow: row wrap;
+    width: 400px;
+    animation: slide-out 0.5s forwards;
+    background: rgba(100, 121, 121, 0.29);
+    transition: width 1.2s;
+    z-index: 999;
+    position: absolute;
+   bottom:  10%;
+    span{
+        
+    
+        width: 10%;
+        height: 40px;
+        padding: 5px;
+        margin: 2px;
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: center;
+        background-color: #f9f9f9;
+        border: 1px solid #fff;
+    }
+}

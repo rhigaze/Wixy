@@ -1,0 +1,18 @@
+.screen {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.frame{
+    display: flex;
+    height:100%;
+    width:100%;
+    flex-flow: column nowrap;
+    // border: 4px outset brown;
+    margin: 5px;
+    align-items: center;
+    iframe {
+        // border: 1px solid black;
+    }
+}
+

@@ -1,0 +1,62 @@
+<section *ngIf="editMode" [ngStyle]="data.visual" class="inEdit">
+    <button class="btn btn-danger"  (click)="removeSection()">Delete Section</button>
+    <div class="form-wrapper animated bounceInDown" >
+        <div class="form-header"><h1>Contact us</h1></div>
+        <form [ngFormModel]="frmContact" form-container >
+            <div class="form-group">
+                <inline-edit  [key]=" 'name' "    [value]="dataForm.name"    (onSave)="saveEditable($event)"></inline-edit>:
+                <input type="text" class="form-control" ngControl="name" >
+            </div>
+
+            <div class="form-group">
+                <inline-edit  [key]=" 'email' "    [value]="dataForm.email"    (onSave)="saveEditable($event)"></inline-edit>:
+                <input type="email" class="form-control" ngControl="email">
+            </div>
+            
+            <div class="form-group">
+                 <inline-edit  [key]=" 'phone' "    [value]="dataForm.phone"    (onSave)="saveEditable($event)"></inline-edit>:
+                <input type="tel" class="form-control" ngControl="phone">
+            </div>
+            
+            <div class="form-group"> 
+                <inline-edit  [key]=" 'msg' "    [value]="dataForm.msg"    (onSave)="saveEditable($event)"></inline-edit>:
+                <textarea  class="form-control" ngControl="message"></textarea>
+            </div>
+            <div class="form-footer fc">
+                <button class="btn-primary" type="submit">
+                    <inline-edit  [key]=" 'send' "    [value]="dataForm.send" ></inline-edit>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section *ngIf="!editMode" [ngStyle]="data.visual">
+    <div class="container" (submit)="doLogin($event)" class="form-wrapper animated bounceInDown">
+        <div class="form-header"><h1>Contact us</h1></div>
+        <form [ngFormModel]="frmContact" >
+            <div class="form-group">
+                <label>{{dataForm.name}}:</label>
+                <input type="text" class="form-control" ngControl="name" >
+            </div>
+
+            <div class="form-group">
+                <label>{{dataForm.email}}:</label>
+                <input type="email" class="form-control" ngControl="email">
+            </div>
+            
+            <div class="form-group">
+                <label>{{dataForm.phone}}:</label>
+                <input type="tel" class="form-control" ngControl="phone">
+            </div>
+            
+            <div class="form-group">
+                <label>{{dataForm.msg}}:</label>
+                <textarea  class="form-control" ngControl="message"></textarea>
+            </div>
+            <div class="form-footer">
+                <button class="btn-primary" type="submit">{{dataForm.send}}</button>
+            </div>
+        </form>
+    </div>
+</section>

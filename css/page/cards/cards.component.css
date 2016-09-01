@@ -1,0 +1,49 @@
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 1vw; }
+
+.card {
+  width: 20vw;
+  min-width: 100px;
+  height: 20vw;
+  min-height: 100px;
+  background: rgba(129, 121, 121, 0.29);
+  border-radius: 10%;
+  margin: 1vw 1vh;
+  padding: 1vw;
+  text-align: center; }
+
+.btns {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 5px; }
+  .btns button {
+    width: 120px;
+    margin: 10px; }
+
+.inEdit {
+  border: dashed 1px #428bca; }
+
+.icons {
+  display: flex;
+  flex-flow: row wrap;
+  width: 400px;
+  animation: slide-out 0.5s forwards;
+  background: rgba(100, 121, 121, 0.29);
+  transition: width 1.2s;
+  z-index: 999;
+  position: absolute;
+  bottom: 10%; }
+  .icons span {
+    width: 10%;
+    height: 40px;
+    padding: 5px;
+    margin: 2px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #fff; }

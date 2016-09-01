@@ -1,0 +1,11 @@
+.screen {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.frame {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-flow: column nowrap;
+  margin: 5px;
+  align-items: center; }

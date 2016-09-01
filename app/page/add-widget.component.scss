@@ -1,0 +1,53 @@
+.widgetsAdd {
+    overflow: hidden;
+    z-index: 2;
+    right:0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items:  center;
+    width: 200px;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgba(100, 121, 121, 0.29);
+    padding: 0 15px 15px 15px;
+    position: fixed;
+    bottom: -370px;
+    transform: translateY(0%);
+}
+.btn-widget{
+    background-color: #333;
+    color: white;
+}
+   
+.slide-in {
+    animation: slide-in 0.5s forwards;
+}  
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% { transform: translateY(-86%) }
+}
+
+@keyframes slide-out {
+    0% { transform: translateY(-86%) }
+    100% { transform: translateY(0%) }
+}
+
+select {
+    // width:80%;
+}
+.showWidgetBtn {
+    /*align-self: center;*/
+
+    /*top: 0px;*/
+}
+
+.addBtn {
+    width:50px;
+}

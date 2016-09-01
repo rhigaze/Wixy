@@ -1,0 +1,8 @@
+.inEdit {
+  border: 1px dashed #428bca; }
+
+.video {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 2%; }

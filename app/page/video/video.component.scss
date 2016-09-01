@@ -1,0 +1,11 @@
+.inEdit {
+    border: 1px dashed #428bca
+}
+
+.video {
+    display: flex;
+    // justify-content: space-between;
+    align-items:  center;
+    flex-flow: column nowrap;
+    margin: 2%;
+}
